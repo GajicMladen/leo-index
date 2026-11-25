@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/leo-index/sw.js', { scope: '/leo-index/' })})}

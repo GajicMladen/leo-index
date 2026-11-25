@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sr" data-tenant="leoindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Poručite index sendviče, tortilje, roštilj i knedle iz Leo Index-a — Gajeva 1, Novi Sad. Svaki dan do 01:00." />
+    <meta name="theme-color" content="#FFF8EC" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Leo Index" />
+    <link rel="icon" href="/leo-index/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/leo-index/apple-touch-icon.png" />
+    <title>Leo Index · Novi Sad</title>
+    <style>
+      /* Splash painted before the JS bundle arrives (slow networks): brand colour + name, replaced by React. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: var(--color-cream-100, #fff); }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-forest-800, #222); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="leoindex"] {
+  --color-cream-50: #FFFFFF;
+  --color-cream-100: #FFF8EC;
+  --color-cream-200: #FBEBD0;
+  --color-cream-300: #F2DAB2;
+  --color-cream-400: #D9BD90;
+  --color-azure-100: #FFF3C7;
+  --color-azure-200: #FFD95A;
+  --color-azure-300: #F7C21B;
+  --color-azure-400: #E2A80C;
+  --color-on-primary: #3B1A0C;
+  --color-forest-950: #1E0B05;
+  --color-forest-900: #2B120A;
+  --color-forest-800: #3E1B0F;
+  --color-forest-700: #542616;
+  --color-forest-600: #6E3520;
+  --color-forest-500: #8E4E34;
+  --color-forest-400: #B47B5F;
+  --color-flame-100: #FDE3E1;
+  --color-flame-200: #F8B1AB;
+  --color-flame-500: #D7141A;
+  --color-flame-600: #BB1016;
+  --color-flame-700: #990C11;
+  --color-tomato-500: #D2361F;
+  --color-tomato-100: #FCE4DF;
+  --color-basil-500: #3C8D4C;
+  --color-basil-100: #E2F1E4;
+  --color-ink: #2C140B;
+  --color-ink-2: #6F584C;
+  --color-ink-3: #A8968C;
+  --font-display: "Rubik ExtraBold Italic", "Arial Black", Impact, sans-serif;
+  --display-scale: 0.74;
+  --display-tracking: 0;
+  --display-case: uppercase;
+  --display-weight: 800;
+  --motif: repeating-conic-gradient(from -90deg at 50% 95%, rgba(255, 255, 255, 0.22) 0deg 7deg, transparent 7deg 14deg), linear-gradient(#F7C21B, #F7C21B);
+  --glass-bg: rgba(255, 248, 236, 0.82);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /leo-index/ is filled in by vite.config.ts.
+   Rubik ExtraBold Italic, the slanted heavy face of the LEO INDEX wordmark. Declared as font-style: normal under its own
+   family name so every headline-* renders the italic cut without a font-style token (headlines have none). */
+@font-face {
+  font-family: 'Rubik ExtraBold Italic';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/leo-index/fonts/rubik-800i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Rubik ExtraBold Italic';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/leo-index/fonts/rubik-800i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    <link rel="preload" as="image" href="/leo-index/pizzas/index.webp" />
+    <link rel="preload" as="image" href="/leo-index/logo.webp" />
+    <script type="module" crossorigin src="/leo-index/assets/main-BLHWvEKq.js"></script>
+    <link rel="stylesheet" crossorigin href="/leo-index/assets/main-iKMdojV1.css">
+  <link rel="manifest" href="/leo-index/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/leo-index/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">Leo Index</span><span class="splash-sub">Učitavanje</span></div></div>
+  </body>
+</html>

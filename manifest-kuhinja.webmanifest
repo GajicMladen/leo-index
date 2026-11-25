@@ -1,0 +1,26 @@
+{
+  "id": "/leo-index/kuhinja",
+  "name": "Leo Index · Kuhinja",
+  "short_name": "Kuhinja",
+  "description": "Portal za kuhinju — Leo Index",
+  "lang": "sr",
+  "start_url": "/leo-index/kuhinja",
+  "scope": "/leo-index/kuhinja",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#2B120A",
+  "background_color": "#2B120A",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
